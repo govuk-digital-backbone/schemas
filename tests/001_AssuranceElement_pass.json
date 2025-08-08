@@ -1,0 +1,94 @@
+{
+    "@context": "https://schema.gov.uk/",
+    "@type": "https://schema.gov.uk/AssuranceElement",
+    "@id": "https://entity.gov.uk/assurance-element/3b5c7164-c970-4f51-a9d6-e27bb9834f65",
+    "info": {
+        "@type": "https://schema.gov.uk/InfoObject",
+        "title": "Cyber Assessment Framework",
+        "version": "4.0.0"
+    },
+    "level": "Framework",
+    "intent": "positive",
+    "status": "active",
+    "children": [
+        {
+            "@context": "https://schema.gov.uk/",
+            "@type": "https://schema.gov.uk/AssuranceElement",
+            "@id": "https://entity.gov.uk/assurance-element/3b5c7164-c970-4f51-a9d6-e27bb9834f65",
+            "displayId": "CAF Objective A",
+            "displayOrder": 1,
+            "info": {
+                "@type": "https://schema.gov.uk/InfoObject",
+                "title": "Managing Security Risks",
+                "version": "4.0.0"
+            },
+            "level": "Objective",
+            "intent": "positive",
+            "status": "active",
+            "children": [
+                {
+                    "@context": "https://schema.gov.uk/",
+                    "@type": "https://schema.gov.uk/AssuranceElement",
+                    "@id": "https://entity.gov.uk/assurance-element/3b5c7164-c970-4f51-a9d6-e27bb9834f65",
+                    "displayId": "Principle A1",
+                    "displayOrder": 1,
+                    "info": {
+                        "@type": "https://schema.gov.uk/InfoObject",
+                        "title": "Governance",
+                        "version": "4.0.0"
+                    },
+                    "level": "Principle",
+                    "intent": "positive",
+                    "status": "active",
+                    "children": [
+                        {
+                            "@context": "https://schema.gov.uk/",
+                            "@type": "https://schema.gov.uk/AssuranceElement",
+                            "@id": "https://entity.gov.uk/assurance-element/3b5c7164-c970-4f51-a9d6-e27bb9834f65",
+                            "displayId": "A1.a",
+                            "displayOrder": 1,
+                            "info": {
+                                "@type": "https://schema.gov.uk/InfoObject",
+                                "title": "Board Direction",
+                                "version": "4.0.0"
+                            },
+                            "level": "Outcome",
+                            "intent": "positive",
+                            "status": "active",
+                            "children": [
+                                {
+                                    "@context": "https://schema.gov.uk/",
+                                    "@type": "https://schema.gov.uk/AssuranceElement",
+                                    "@id": "https://entity.gov.uk/assurance-element/3b5c7164-c970-4f51-a9d6-e27bb9834f65",
+                                    "displayOrder": 1,
+                                    "info": {
+                                        "version": "4.0.0"
+                                    },
+                                    "level": "Indicator of Good Practice",
+                                    "statement": "Your organisation's approach and policy relating to the security of network and information systems supporting the operation of essential function(s) are owned and managed at board-level. These are communicated, in a meaningful way, to risk management decision-makers across the organisation.",
+                                    "labels": ["Achieved"],
+                                    "intent": "positive",
+                                    "status": "active"
+                                },
+                                {
+                                    "@context": "https://schema.gov.uk/",
+                                    "@type": "https://schema.gov.uk/AssuranceElement",
+                                    "@id": "https://entity.gov.uk/assurance-element/3b5c7164-c970-4f51-a9d6-e27bb9834f65",
+                                    "displayOrder": 2,
+                                    "info": {
+                                        "version": "4.0.0"
+                                    },
+                                    "level": "Indicator of Good Practice",
+                                    "statement": "The security of network and information systems related to the operation of essential function(s) is not discussed or reported on regularly at board-level.",
+                                    "labels": ["Not achieved"],
+                                    "intent": "negative",
+                                    "status": "active"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

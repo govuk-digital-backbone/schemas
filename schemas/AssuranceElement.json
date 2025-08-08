@@ -1,0 +1,93 @@
+{
+  "$id": "https://schema.gov.uk/AssuranceElement",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "AssuranceElement",
+  "type": "object",
+  "additionalProperties": true,
+  "required": ["@type", "@id"],
+  "properties": {
+    "@context": {
+      "const": "https://schema.gov.uk/",
+      "description": "Type identifier (JSON-LD friendly)."
+    },
+    "@type": {
+      "const": "https://schema.gov.uk/AssuranceElement",
+      "description": "Type identifier (JSON-LD friendly)."
+    },
+    "@id": {
+      "type": "string",
+      "format": "uri",
+      "description": "URI of the assurance element."
+    },
+    "displayId": {
+      "type": "string",
+      "description": "Human-readable identifier"
+    },
+    "displayOrder": { "type": "number" },
+    "info": {
+      "$ref": "InfoObject.json"
+    },
+    "level": {
+      "type": "string",
+      "description": "Position in the assurance hierarchy"
+    },
+    "statement": {
+      "type": "string",
+      "description": "Textual statement of the assurance element."
+    },
+    "labels": {
+      "type": "array",
+      "items": { "type": "string" },
+      "uniqueItems": true
+    },
+    "intent": {
+      "type": "string",
+      "enum": ["positive", "negative", "neutral"],
+      "default": "neutral"
+    },
+    "source": { 
+      "type": "string",
+      "format": "uri"
+    },
+    "status": {
+      "type": "string",
+      "enum": ["draft", "active", "deprecated"],
+      "default": "active"
+    },
+    "relatedControls": {
+      "type": "array",
+      "items": { "type": "string" },
+      "uniqueItems": true
+    },
+    "relatedElements": {
+      "type": "array",
+      "items": { "type": "string", "format": "uri" },
+      "uniqueItems": true
+    },
+    "dependencies": {
+      "type": "array",
+      "items": { "type": "string", "format": "uri" },
+      "uniqueItems": true
+    },
+    "conflictsWith": {
+      "type": "array",
+      "items": { "type": "string", "format": "uri" },
+      "uniqueItems": true
+    },
+    "guidance": {
+      "type": "array",
+      "items": {
+        "oneOf": [
+          { "$ref": "Guidance.json" },
+          { "type": "string", "format": "uri" }
+        ]
+      }
+    },
+    "children": {
+      "type": "array",
+      "items": { "$ref": "#" },
+      "description": "Recursive child assuranceElements.",
+      "uniqueItems": true
+    }
+  }
+}

@@ -1,0 +1,21 @@
+{
+    "$id": "https://schema.gov.uk/Guidance",
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "title": "Guidance",
+    "type": "object",
+    "additionalProperties": true,
+    "properties": {
+        "@type": { "const": "https://schema.gov.uk/Guidance" },
+        "@id": { "type": "string", "format": "uri" },
+        "text": {
+            "type": "string",
+            "description": "The guidance text."
+        },
+        "references": {
+            "type": "array",
+            "items": { "type": "string", "format": "uri" },
+            "uniqueItems": true
+        },
+        "info": { "$ref": "InfoObject.json" }
+    }
+}

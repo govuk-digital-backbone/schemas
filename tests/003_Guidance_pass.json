@@ -1,0 +1,13 @@
+{
+    "@context": "https://schema.gov.uk/",
+    "@type": "https://schema.gov.uk/Guidance",
+    "info": {
+        "title": "Learning about users and their needs",
+        "version": "2017-03-23",
+        "lastUpdatedAt": "2017-03-23T12:00:00Z",
+        "createdAt": "2016-04-04T12:00:00Z"
+    },
+    "references": [
+        "https://www.gov.uk/service-manual/user-research/start-by-learning-user-needs"
+    ]
+}

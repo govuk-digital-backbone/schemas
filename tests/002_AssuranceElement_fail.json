@@ -1,0 +1,7 @@
+{
+    "@context": "https://schema.gov.uk/",
+    "@type": "https://schema.gov.uk/AssuranceElement",
+    "@id": "https://entity.gov.uk/assurance-element/3b5c7164-c970-4f51-a9d6-e27bb9834f65",
+    "displayId": "CAF.A.1.1",
+    "displayOrder": 9
+}

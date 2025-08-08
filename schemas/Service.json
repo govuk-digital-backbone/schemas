@@ -1,0 +1,12 @@
+{
+    "$id": "https://schema.gov.uk/Service",
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "title": "Service",
+    "type": "object",
+    "additionalProperties": true,
+    "properties": {
+        "@type": { "const": "https://schema.gov.uk/Service" },
+        "@id": { "type": "string", "format": "uri" },
+        "info": { "$ref": "InfoObject.json" }
+    }
+}

@@ -1,0 +1,12 @@
+{
+    "$id": "https://schema.gov.uk/Organisation",
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "title": "Organisation",
+    "type": "object",
+    "additionalProperties": true,
+    "properties": {
+        "@type": { "const": "https://schema.gov.uk/Organisation" },
+        "@id": { "type": "string", "format": "uri" },
+        "info": { "$ref": "InfoObject.json" }
+    }
+}

@@ -1,0 +1,72 @@
+{
+    "$id": "https://schema.gov.uk/InfoObject",
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "title": "InfoObject",
+    "type": "object",
+    "additionalProperties": true,
+    "required": [],
+    "$defs": {
+        "termsOfService": {
+            "type": "object",
+            "additionalProperties": true,
+            "description": "Any terms of service object."
+        },
+        "contact": {
+            "type": "object",
+            "additionalProperties": true,
+            "description": "Any contact object."
+        },
+        "license": {
+            "type": "object",
+            "additionalProperties": true,
+            "description": "Any license object."
+        }
+    },
+    "properties": {
+        "@type": {
+            "const": "https://schema.gov.uk/InfoObject"
+        },
+        "title": {
+            "type": "string"
+        },
+        "summary": {
+            "type": "string"
+        },
+        "description": {
+            "type": "string"
+        },
+        "termsOfService": {
+            "type": "string",
+            "format": "uri-reference"
+        },
+        "contact": {
+            "$ref": "#/$defs/contact"
+        },
+        "license": {
+            "$ref": "#/$defs/license"
+        },
+        "version": {
+            "type": "string"
+        },
+        "createdAt": {
+            "type": "string",
+            "format": "date-time"
+        },
+        "lastUpdatedAt": {
+            "type": "string",
+            "format": "date-time"
+        },
+        "replaces": {
+            "type": "string",
+            "format": "uri"
+        },
+        "replacedBy": {
+            "type": "string",
+            "format": "uri"
+        },
+        "owner": {
+            "type": "string",
+            "format": "uri"
+        }
+    }
+}
